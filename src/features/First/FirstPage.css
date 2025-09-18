@@ -9,7 +9,7 @@
 
 .splash-logo {
   object-fit: contain;
-  width: 70%;
+  width: 100%;
   animation: splash-in 3.8s cubic-bezier(0.4, 0, 0.2, 1) 1;
   opacity: 0;
 }
@@ -28,5 +28,15 @@
     opacity: 1;
     transform: scale(1);
     filter: drop-shadow(0 0 10px #00e6ff);
+  }
+}
+@media (max-width: 1200px) {
+  .splash-logo {
+    width: 45%;
+  }
+}
+@media (max-width: 1500px) {
+  .splash-logo {
+    width: 45%;
   }
 }
