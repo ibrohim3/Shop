@@ -1,3 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Buronto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
 body {
-    background: #F9FAFB;
+  background-color: var(--main-bg-color);
+  font-family: "Buronto", sans-serif;
+}
+/* gradient text */
+
+.gradient-text {
+  font-size: var(--bold-sz);
+  font-weight: bold;
+  background: linear-gradient(
+    270deg,
+    var(--hover-cta-acc),
+    var(--accent1),
+    var(--secondary-cta),
+    var(--accent2),
+    var(--accent3),
+    var(--hover-cta-acc)
+  );
+  background-size: 1200% 1200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: pulse-gradient 8s ease infinite;
+}
+
+@keyframes pulse-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

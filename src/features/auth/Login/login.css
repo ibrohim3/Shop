@@ -4,6 +4,7 @@
   align-items: center;
   min-height: 90vh;
   text-align: center;
+  width: 100%;
 }
 
 .login {
@@ -60,6 +61,7 @@
 
 .login-form button:hover {
   background: #305080;
+  cursor: pointer;
 }
 .register-text {
   color: var(--title-color);

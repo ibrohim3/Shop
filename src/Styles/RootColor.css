@@ -1,9 +1,19 @@
 :root {
-    --primary-color:  #2D9CDB;
-    --secondary-color: #27AE60;
-    --bg-color: #F9FAFB;
-    --title-color: #212121 ;
-    --text-color: #757575;
-    --input-border: #2D9CDB;
-    --login-btn: #2D9CDB;
+  --main-bg-color: #0e0e0e;
+  --secondary-bg-color: #1a1a1a;
+  --main-title-color: #ffffff;
+  --text-color: #ededed;
+  --hover-cta-acc: #ffd700;
+  --accent1: #ffea00;
+  --accent2: #e6c200;
+  --accent3: #f5d700;
+  --secondary-cta: #c0a000;
+  --line-color: #ffce00;
+  --error-color: #e74c3c;
+  /* Sizes */
+  --bold-sz: 36px;
+  --semi-bold-sz: 28px;
+  --medium-sz: 20px;
+  --body-text-small: 16px;
+  --small-text: 14px;
 }
