@@ -1,11 +1,11 @@
 import React from "react";
 // import FirstPage from "./features/First/FirstPage";
-import AppRoute from "./routes/AppRoute";
 import "./i18n";
+import MainLayout from "./layout/MainLayout";
 function App() {
   return (
     <div className="main">
-      <AppRoute />
+      <MainLayout />
     </div>
   );
 }

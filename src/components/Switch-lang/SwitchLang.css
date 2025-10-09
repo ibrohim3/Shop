@@ -1,0 +1,43 @@
+.lang-switcher {
+  position: relative;
+  display: inline-block;
+}
+
+.lang-btn {
+  padding: 14px 12px;
+  background: #1a1a1a;
+  color: var(--hover-cta-acc);
+  border: 2px solid var(--hover-cta-acc);
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.4s ease;
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--secondary-bg-color);
+  border: 2px solid var(--hover-cta-acc);
+  border-radius: 10px;
+  margin-top: 4px;
+  padding: 0;
+  min-width: 100px;
+  z-index: 10;
+}
+.lang-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: all 0.4s ease;
+}
+.lang-item:hover .lang-text {
+  background: linear-gradient(
+    90deg,
+    var(--hover-cta-acc),
+    var(--secondary-cta)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
