@@ -14,7 +14,7 @@
 // }
 import { Routes, Route, Navigate } from "react-router-dom";
 import Layout from "../layout/Layout";
-import Home from "../pages/Home";
+import Home from "../pages/Home/Home";
 import About from "../pages/About";
 
 function AppRoute() {

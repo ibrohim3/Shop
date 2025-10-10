@@ -12,13 +12,14 @@ const resources = {
             login: "Kirish",
 
             // Catalog section
-            catalog_title: "Sotib olishni osonlashtiring — har xil mahsulotlar bir joyda!",
-            catalog_subtitle: "Metall, yog‘och, mebel va boshqa tovarlarni onlayn xarid qiling.",
-            explore_btn: "Katalogni ko‘rish",
+            homeTitle: "<1>Sotib olishni</1> osonlashtiring — har xil mahsulotlar bir joyda!",
+            homeSubtitle: "Metall, yog‘och, mebel va boshqa tovarlarni onlayn xarid qiling.",
+            exploreBtn: "Katalogni ko‘rish",
             metal: "Metal",
             furniture: "Mebel",
             wood: "Yog‘och",
             tech: "Texnika",
+            list: "Tunka / List",
             view: "Ko‘rish"
         }
     },
@@ -32,13 +33,14 @@ const resources = {
             login: "Login",
 
             // Catalog section
-            catalog_title: "Make purchasing easier — all kinds of products in one place!",
-            catalog_subtitle: "Buy metal, wood, furniture and other goods online.",
-            explore_btn: "Explore Catalog",
+            homeTitle: "Make <1>purchasing</1> easier — all kinds of products in one place!",
+            homeSubtitle: "Buy metal, wood, furniture and other goods online.",
+            exploreBtn: "Explore Catalog",
             metal: "Metal",
             furniture: "Furniture",
             wood: "Wood",
             tech: "Technology",
+            list: "Lathing / Batten",
             view: "View"
         }
     },
@@ -52,13 +54,14 @@ const resources = {
             login: "Вход",
 
             // Catalog section
-            catalog_title: "Упростите покупки — все товары в одном месте!",
-            catalog_subtitle: "Покупайте металл, дерево, мебель и другие товары онлайн.",
-            explore_btn: "Посмотреть каталог",
+            homeTitle: "Сделайте <1>покупки</1> проще — все товары в одном месте!",
+            homeSubtitle: "Покупайте металл, дерево, мебель и другие товары онлайн.",
+            exploreBtn: "Посмотреть каталог",
             metal: "Металл",
             furniture: "Мебель",
             wood: "Дерево",
             tech: "Техника",
+            list: "обрешётка",
             view: "Смотреть"
         }
     }
