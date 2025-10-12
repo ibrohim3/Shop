@@ -4,30 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Title va description -->
+    <!-- ✅ Title & Description -->
     <title>Turon Metal – Sifatli metall mahsulotlar</title>
-    <meta name="description" content="Turon Metal kompaniyasi. Sifatli metall mahsulotlar va xizmatlar.">
+    <meta
+      name="description"
+      content="Turon Metal kompaniyasi – sifatli metall mahsulotlar, yog‘och va boshqa qurilish materiallari. Tez yetkazib berish va arzon narxlar."
+    />
 
-    <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- ✅ Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
-    <!-- Font Preloading -->
-    <link rel="preload" href="/fonts/Roboto.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- ✅ Font Awesome (async yuklash) -->
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      />
+    </noscript>
 
-    <!-- Open Graph / Social media -->
+    <!-- ✅ Google Fonts preload (tez yuklanish uchun) -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <!-- ✅ Font optimization -->
+    <link
+      rel="preload"
+      href="/fonts/Roboto.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- ✅ Open Graph (social preview) -->
     <meta property="og:title" content="Turon Metal – Metall mahsulotlar" />
-    <meta property="og:description" content="Sifatli metall mahsulotlar va xizmatlar" />
-    <meta property="og:image" content="https://turonshop.netlify.app/images/og-image.webp" />
+    <meta
+      property="og:description"
+      content="Sifatli metall mahsulotlar va xizmatlar – Turon Metal."
+    />
+    <meta
+      property="og:image"
+      content="https://turonshop.netlify.app/images/og-image.webp"
+    />
     <meta property="og:url" content="https://turonshop.netlify.app" />
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- SEO for search engines -->
+    <!-- ✅ SEO -->
     <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0e2431" />
+
+    <!-- ✅ Preconnect to CDN (tezroq yuklanish uchun) -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ✅ Fav images preload -->
+    <link rel="preload" as="image" href="/images/og-image.webp" />
   </head>
+
   <body>
     <div id="root"></div>
 
-    <!-- Main JS -->
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- ✅ Main JS (defer bilan) -->
+    <script type="module" src="/src/main.jsx" defer></script>
   </body>
 </html>

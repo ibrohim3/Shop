@@ -1,0 +1,105 @@
+.ad-swiper {
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  padding: 0 200px;
+}
+
+.ad-swiper-container {
+  width: 100%;
+  height: 450px;
+  border-radius: 20px;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.slide-content {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  padding: 20px 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+}
+
+.slide-content h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.slide-content p {
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+/* Pagination nuqtalari */
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--hover-cta-acc);
+  opacity: 1;
+}
+
+/* Next / Prev tugmalar */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* Joylashuvni moslash */
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ad-swiper-container {
+    height: 280px;
+  }
+
+  .slide-content {
+    bottom: 20px;
+    left: 20px;
+    padding: 15px;
+  }
+
+  .slide-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .slide-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ad-swiper-container {
+    height: 220px;
+  }
+}

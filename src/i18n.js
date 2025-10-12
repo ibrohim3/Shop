@@ -6,7 +6,7 @@ const resources = {
         translation: {
             company: "Turon Metal",
             home: "Bosh Sahifa",
-            products: "Mahsulotlar",
+            products: "Katalog",
             about: "Biz haqimizda",
             contact: "Biz bilan bog‘laning",
             login: "Kirish",
@@ -27,7 +27,7 @@ const resources = {
         translation: {
             company: "Turon Metal",
             home: "Home",
-            products: "Products",
+            products: "Catalog",
             about: "About Us",
             contact: "Contact Us",
             login: "Login",
@@ -48,7 +48,7 @@ const resources = {
         translation: {
             company: "Турон Металл",
             home: "Главная",
-            products: "Продукты",
+            products: "Каталог",
             about: "О нас",
             contact: "Связаться с нами",
             login: "Вход",
