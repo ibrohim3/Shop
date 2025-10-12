@@ -1,0 +1,10 @@
+.content {
+  padding: 25px 200px;
+}
+.skeleton-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+}
