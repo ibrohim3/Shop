@@ -21,7 +21,32 @@ const resources = {
             tech: "Texnika",
             list: "Tunka / List",
             view: "Ko‘rish",
-            search_placeholder: "Mahsulot qidiring..."
+            search_placeholder: "Mahsulot qidiring...",
+
+
+            // Cervice section
+            cervice1: "Yetkazib Berish Xizmati",
+            cervice2: "100% To'lov Qaytish Kafolati",
+            cervice3: "Sharxlar Tizimi",
+            cervice1_desc: "O'zbekiston bo'ylab",
+            cervice2_desc: "Ikki hafta ichida",
+            cervice3_desc: "Sharxlarni o'qing va bo'lishing",
+
+            // Footer
+            address: "Manzil",
+            have_question: "Savolingiz bormi?",
+            info: "Ma’lumot",
+            how_to_buy: "Qanday harid qilay?",
+            payment_delivery: "To‘lov va yetkazib berish usullari",
+            user_agreement: "Foydalanuvchi shartnomasi",
+            additional: "Qo‘shimcha",
+            feedback: "Teskari aloqa",
+            sitemap: "Sayt xaritasi",
+            subscribe_news: "Yangiliklarga obuna bo‘lish",
+            no_spam: "Biz sizning pochta manzilingizni uchinchi shaxslarga bermaymiz.",
+            enter_email: "Pochta manzilingizni kiriting...",
+            subscribe: "Obuna bo‘lish",
+            all_rights: "Barcha huquqlar himoyalangan.",
 
         }
     },
@@ -44,7 +69,34 @@ const resources = {
             tech: "Technology",
             list: "Lathing / Batten",
             view: "View",
-            search_placeholder: "Search..."
+            search_placeholder: "Search...",
+
+            // Cervice section
+            cervice1: "Delivery Service",
+            cervice2: "100% Money-Back Guarantee",
+            cervice3: "Review System",
+            cervice1_desc: "Across Uzbekistan",
+            cervice2_desc: "Within two weeks",
+            cervice3_desc: "Read and share reviews",
+
+            // Footer
+
+            address: "Address",
+            have_question: "Have a question?",
+            info: "Information",
+            how_to_buy: "How to buy?",
+            payment_delivery: "Payment and delivery methods",
+            user_agreement: "User agreement",
+            additional: "Additional",
+            feedback: "Feedback",
+            sitemap: "Sitemap",
+            subscribe_news: "Subscribe to news",
+            no_spam: "We do not share your email address with third parties.",
+            enter_email: "Enter your email address...",
+            subscribe: "Subscribe",
+            all_rights: "All rights reserved.",
+
+
         }
     },
     ru: {
@@ -66,7 +118,36 @@ const resources = {
             tech: "Техника",
             list: "обрешётка",
             view: "Смотреть",
-            search_placeholder: "Найдите товар..."
+            search_placeholder: "Найдите товар...",
+
+
+            // Cervice section
+            cervice1: "Служба доставки",
+            cervice2: "100% Гарантия возврата денег",
+            cervice3: "Система отзывов",
+            cervice1_desc: "По всему Узбекистану",
+            cervice2_desc: "В течение двух недель",
+            cervice3_desc: "Читайте и делитесь отзывами",
+
+
+            // Footer
+
+            address: "Адрес",
+            have_question: "Есть вопрос?",
+            info: "Информация",
+            how_to_buy: "Как купить?",
+            payment_delivery: "Способы оплаты и доставки",
+            user_agreement: "Пользовательское соглашение",
+            additional: "Дополнительно",
+            feedback: "Обратная связь",
+            sitemap: "Карта сайта",
+            subscribe_news: "Подписаться на новости",
+            no_spam: "Мы не передаем ваш адрес электронной почты третьим лицам.",
+            enter_email: "Введите ваш адрес электронной почты...",
+            subscribe: "Подписаться",
+            all_rights: "Все права защищены.",
+
+
         }
     }
 };

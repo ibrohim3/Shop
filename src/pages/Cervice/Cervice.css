@@ -1,0 +1,41 @@
+.cervice {
+  max-height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 0;
+  margin: 40px auto;
+  background-color: var(--secondary-bg-color);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.1);
+}
+.cervice-item {
+  flex: 1 1 30%;
+  margin: 0 15px;
+  background: var(--secondary-bg-color, #f9f9f9);
+  border-radius: 12px;
+  padding: 25px 25px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.cervice-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1.8);
+}
+.item-name {
+  font-size: var(--medium-sz-hover);
+  color: var(--main-title-color);
+  margin-bottom: 10px;
+  line-height: 110%;
+}
+.item-desc {
+  font-size: var(--body-text-small);
+  color: var(--info-color);
+  margin-top: 0;
+}
+.icon {
+  color: var(--main-color, #007bff);
+  font-size: 36px;
+  margin-bottom: 15px;
+}

@@ -5,7 +5,9 @@ import Header from "../components/Header/Header";
 import Home from "../pages/Home/Home";
 import AdSwiper from "../Swiper/AdSwiper";
 import SkeletonCard from "../components/loading/SkeletonCard";
+import Cervice from "../pages/Cervice/Cervice";
 import "./MainLayout.css";
+import Footer from "../components/Footer/Footer";
 
 function MainLayout() {
   const { lang } = useParams();
@@ -39,10 +41,12 @@ function MainLayout() {
         ) : (
           <>
             <Home />
+            <Cervice />
             <Outlet />
           </>
         )}
       </div>
+      <Footer />
     </>
   );
 }

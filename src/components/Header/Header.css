@@ -11,6 +11,7 @@ header {
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
+  /* border-bottom: 0.1px solid var(--hover-cta-acc); */
 }
 
 /* === NAV === */
