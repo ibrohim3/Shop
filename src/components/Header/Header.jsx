@@ -16,7 +16,8 @@ function Header() {
       {/* === LOGO === */}
       <div className="logo">
         <NavLink className="gradient-text" to="/" onClick={closeMenu}>
-          <i className="fa-solid fa-industry"></i> {t("company")}
+          {t("company")}
+          {/* <i className="fa-solid fa-industry"></i> */}
         </NavLink>
       </div>
 
