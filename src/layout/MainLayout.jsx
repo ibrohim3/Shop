@@ -21,7 +21,7 @@ function MainLayout() {
 
   // Skeleton holatini ko‘rsatish (2s)
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2000);
+    const timer = setTimeout(() => setLoading(false), 3000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -33,7 +33,7 @@ function MainLayout() {
         {loading ? (
           <div className="skeleton-container">
             {[1, 2, 3].map((n) => (
-              <SkeletonCard key={n} />
+              <SkeletonCard count={5} key={n} />
             ))}
           </div>
         ) : (

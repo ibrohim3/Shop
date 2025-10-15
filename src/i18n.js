@@ -20,7 +20,9 @@ const resources = {
             wood: "Yog‘och",
             tech: "Texnika",
             list: "Tunka / List",
-            view: "Ko‘rish"
+            view: "Ko‘rish",
+            search_placeholder: "Mahsulot qidiring..."
+
         }
     },
     en: {
@@ -41,7 +43,8 @@ const resources = {
             wood: "Wood",
             tech: "Technology",
             list: "Lathing / Batten",
-            view: "View"
+            view: "View",
+            search_placeholder: "Search..."
         }
     },
     ru: {
@@ -62,7 +65,8 @@ const resources = {
             wood: "Дерево",
             tech: "Техника",
             list: "обрешётка",
-            view: "Смотреть"
+            view: "Смотреть",
+            search_placeholder: "Найдите товар..."
         }
     }
 };

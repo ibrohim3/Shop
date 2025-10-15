@@ -7,53 +7,77 @@ import SwitchLang from "../Switch-lang/SwitchLang";
 function Header() {
   const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // --- menyu yopilishi uchun nav ichidagi link bosilganda
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <header>
+      {/* === LOGO === */}
       <div className="logo">
-        <NavLink className="gradient-text" to="/">
+        <NavLink className="gradient-text" to="/" onClick={closeMenu}>
           {t("company")}
         </NavLink>
       </div>
-      <div className="burger" onClick={() => setMenuOpen(!menuOpen)}>
+
+      {/* === BURGER === */}
+      <div
+        className={`burger ${menuOpen ? "open" : ""}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
         <span></span>
         <span></span>
         <span></span>
       </div>
+
+      {/* === NAVIGATION === */}
       <nav className={`nav ${menuOpen ? "active" : ""}`}>
+        {/* === CATALOG BTN === */}
         <div className="catalog-container">
-          <p className="catalog login-btn ">{t("products")}</p>
+          <p className="catalog login-btn">{t("products")}</p>
         </div>
+
+        {/* === SEARCH === */}
         <div className="search">
-          <input type="text" placeholder="Search..." />
+          <input
+            type="text"
+            placeholder={t("search_placeholder") || "Search..."}
+          />
           <i className="fa-solid fa-magnifying-glass search-icon"></i>
         </div>
 
-        <ul className="links">
+        {/* === LINKS === */}
+        <ul className={`links ${menuOpen ? "active" : ""}`}>
           <li>
             <NavLink
-              className={({ isActive }) => (isActive ? "active" : "")}
               to="/home"
+              className={({ isActive }) => (isActive ? "active" : "")}
+              onClick={closeMenu}
             >
               {t("home")}
             </NavLink>
           </li>
           <li>
             <NavLink
-              className={({ isActive }) => (isActive ? "active" : "")}
               to="/about-us"
+              className={({ isActive }) => (isActive ? "active" : "")}
+              onClick={closeMenu}
             >
               {t("about")}
             </NavLink>
           </li>
           <li>
             <NavLink
-              className={({ isActive }) => (isActive ? "active" : "")}
               to="/contact"
+              className={({ isActive }) => (isActive ? "active" : "")}
+              onClick={closeMenu}
             >
               {t("contact")}
             </NavLink>
           </li>
         </ul>
+
+        {/* === LOGIN + LANG SWITCH === */}
         <div className="btns">
           <button className="login-btn">{t("login")}</button>
           <div className="lang-switcher">

@@ -1,4 +1,4 @@
-.home .text {
+/* .home .text {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -7,7 +7,6 @@
   max-width: 900px;
   min-width: 600px;
   font-size: var(--large);
-  /* color: var(--hover-cta-acc); */
   font-weight: 600;
 }
 .home .info {
@@ -28,4 +27,4 @@
 }
 .home .explore-btn:hover {
   background: var(--secondary-cta);
-}
+} */
