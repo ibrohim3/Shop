@@ -23,7 +23,7 @@ function MainLayout() {
 
   // Skeleton holatini ko‘rsatish (2s)
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 3000);
+    const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);
   }, []);
 

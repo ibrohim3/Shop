@@ -1,15 +1,16 @@
-/* Asosiy layout */
-.wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 50px 0 0 0;
+.slider-container {
   width: 100%;
+  margin: 60px auto;
+  position: relative;
 }
+
+.swiper {
+  padding-bottom: 38px !important;
+}
+
+/* CARDLAR */
 .card {
-  width: 18%;
-  min-width: 250px;
+  width: 100%;
   height: 300px;
   background: var(--secondary-bg-color);
   border: 1px solid var(--borde-color);
@@ -19,8 +20,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 25px;
   transition: all 0.3s ease;
+  margin: 0 auto;
 }
 
 .card img {
@@ -29,7 +30,6 @@
   width: auto;
   height: auto;
   object-fit: contain;
-  display: block;
   margin-bottom: 12px;
 }
 
@@ -55,54 +55,31 @@
   background: var(--secondary-cta);
 }
 
-/* ========================= */
-/* RESPONSIVE MEDIA QUERIES */
-/* ========================= */
-
-/* 📱 Ekran 1200px dan kichik — 4ta card */
-@media (max-width: 1200px) {
-  .card {
-    width: 22%;
-  }
+/* SWIPER tugmalari */
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--main-title-color);
+  transition: 0.3s;
+  font-size: 10px;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: var(--hover-cta-acc);
 }
 
-/* 💻 Ekran 992px dan kichik — 3ta card */
+.swiper-pagination-bullet {
+  background: var(--main-title-color);
+}
+
+/* RESPONSIVE */
 @media (max-width: 992px) {
-  .wrapper {
-    justify-content: center;
-    gap: 20px;
-  }
   .card {
-    width: 30%;
     height: 280px;
   }
 }
 
-/* 📱 Ekran 768px dan kichik — 2ta card */
-@media (max-width: 768px) {
-  .wrapper {
-    justify-content: center;
-  }
-  .card {
-    width: 45%;
-    height: 270px;
-  }
-  .card h3 {
-    font-size: 16px;
-  }
-  .view-btn {
-    padding: 8px 20px;
-  }
-}
-
-/* 📱 Ekran 576px dan kichik — 1ta card */
 @media (max-width: 576px) {
-  .wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
   .card {
-    width: 80%;
     height: auto;
   }
   .card img {
@@ -110,23 +87,5 @@
   }
   .view-btn {
     width: 100%;
-  }
-}
-
-/* 📱 Juda kichik ekranlar (428px va past) */
-@media (max-width: 428px) {
-  .wrapper {
-    margin-top: 30px;
-  }
-  .card {
-    width: 10%;
-    padding: 15px;
-  }
-  .card h3 {
-    font-size: 15px;
-  }
-  .view-btn {
-    font-size: 14px;
-    padding: 8px 15px;
   }
 }

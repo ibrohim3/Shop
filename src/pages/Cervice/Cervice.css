@@ -39,3 +39,43 @@
   font-size: 36px;
   margin-bottom: 15px;
 }
+@media (max-width: 1440px) {
+  .cervice {
+    padding: 80px 40px;
+  }
+  .cervice-item {
+    flex: 1 1 40%;
+    margin: 10px;
+  }
+}
+@media (max-width: 1280px) {
+  .cervice {
+    padding: 70px 30px;
+  }
+  .cervice-item {
+    flex: 1 1 45%;
+    margin: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .cervice {
+    padding: 60px 25px;
+  }
+  .cervice-item {
+    flex: 1 1 45%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 912px) {
+  .cervice {
+    flex-direction: column;
+    padding: 50px 20px;
+    max-height: none;
+  }
+  .cervice-item {
+    flex: 1 1 100%;
+    width: 300px;
+    margin: 10px 0;
+  }
+}
