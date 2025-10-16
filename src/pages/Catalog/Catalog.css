@@ -79,6 +79,9 @@
 }
 
 @media (max-width: 576px) {
+  .slider-container {
+    margin: 30px auto;
+  }
   .card {
     height: auto;
   }
@@ -87,5 +90,10 @@
   }
   .view-btn {
     width: 100%;
+  }
+  .slider-container .swiper-button-next,
+  .slider-container .swiper-button-prev {
+    width: 25px;
+    height: 25px;
   }
 }

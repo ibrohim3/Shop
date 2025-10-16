@@ -114,6 +114,12 @@
     font-size: 0.9rem;
   }
 }
+@media (max-width: 580px) {
+ .ad-swiper .swiper-button-next,.ad-swiper
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
 
 @media (max-width: 480px) {
   .ad-swiper {
@@ -138,5 +144,9 @@
 
   .slide-content p {
     font-size: 0.8rem;
+  }
+  .ad-swiper  .swiper-button-next,.ad-swiper
+  .swiper-button-prev {
+    display: none !important;
   }
 }
