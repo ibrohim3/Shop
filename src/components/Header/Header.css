@@ -1,7 +1,6 @@
 header {
   width: 100%;
   display: flex;
-  flex-direction: column; /* column to allow search under top row on desktop if needed */
   gap: 12px;
   padding: 20px 200px;
   background: var(--secondary-bg-color);
@@ -14,7 +13,7 @@ header {
   transition: all 0.3s ease;
 }
 
-/* Header top row: logo + lang + burger */
+/* Header top row: logo + lang */
 .header-top {
   display: flex;
   align-items: center;
@@ -24,44 +23,16 @@ header {
 }
 
 /* Logo */
-.logo .gradient-text {
-  font-size: 22px;
+.logo {
+  font-size: 36px;
   font-weight: 700;
   color: var(--main-title-color);
   text-decoration: none;
 }
 
-/* Lang switcher position */
+/* Lang switcher */
 .lang-switcher {
   margin-left: 12px;
-}
-
-/* Burger */
-.burger {
-  display: none; /* shown on some mid breakpoints if you want - controlled below */
-  flex-direction: column;
-  justify-content: space-between;
-  width: 24px;
-  height: 18px;
-  cursor: pointer;
-  z-index: 110;
-}
-.burger span {
-  display: block;
-  height: 3px;
-  width: 100%;
-  background-color: var(--main-title-color);
-  border-radius: 10px;
-  transition: all 0.25s ease;
-}
-.burger.open span:nth-child(1) {
-  transform: rotate(45deg) translate(4px, 4px);
-}
-.burger.open span:nth-child(2) {
-  opacity: 0;
-}
-.burger.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(4px, -4px);
 }
 
 /* SEARCH */
@@ -89,7 +60,7 @@ header {
 }
 .search .search-icon {
   position: absolute;
-  right: 12px;
+  right: 26px;
   font-size: 18px;
   color: var(--hover-cta-acc);
   pointer-events: none;
@@ -111,7 +82,6 @@ header .nav {
   display: flex;
   gap: 25px;
   align-items: center;
-  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -120,20 +90,16 @@ header .nav {
   font-size: var(--medium-sz);
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.2s;
+  transition: color 0.3s;
 }
 .links a:hover,
 .links a.active {
   color: var(--hover-cta-acc);
 }
 
-.btns {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
 .login-btn {
-  padding: 10px 18px;
+  font-size: var(--body-text-small);
+  padding: 12px 18px;
   border-radius: 8px;
   border: 2px solid var(--hover-cta-acc);
   background: linear-gradient(
@@ -152,7 +118,7 @@ header .nav {
   color: var(--main-bg-color);
 }
 
-/* MOBILE BOTTOM NAV (hidden on desktop) */
+/* MOBILE BOTTOM NAV */
 .mobile-bottom-nav {
   display: none;
 }
@@ -181,7 +147,6 @@ header .nav {
 /* RESPONSIVE ADJUSTMENTS    */
 /* ========================= */
 
-/* Reduce paddings on wide but not huge screens */
 @media (max-width: 1440px) {
   header {
     padding: 18px 80px;
@@ -200,23 +165,15 @@ header .nav {
   }
 }
 
-/* Show burger for tablet sized screens if you want nav overlay */
-@media (max-width: 1024px) {
-  .burger {
-    display: flex;
-  }
-  /* you can keep nav as overlay when burger open; current CSS leaves desktop nav visible */
-}
-
 /* ======== MOBILE: 980px and below ======== */
 @media (max-width: 980px) {
   header {
     padding: 12px 16px;
     align-items: center;
     gap: 8px;
+    flex-direction: column;
   }
 
-  /* Top row: only logo and lang remain visible and aligned */
   .header-top {
     width: 100%;
     display: flex;
@@ -232,11 +189,8 @@ header .nav {
   .btns .login-btn {
     display: none;
   }
-  .burger {
-    display: none;
-  }
 
-  /* Search should remain inside header under top row and be full width */
+  /* Search full width */
   .search {
     width: 100%;
     margin: 6px 0 0;
@@ -245,6 +199,9 @@ header .nav {
     width: 100%;
     height: 44px;
     padding-right: 40px;
+  }
+  .search-icon {
+    right: 6px;
   }
 
   /* show mobile bottom nav */
@@ -258,7 +215,7 @@ header .nav {
     border-top: 1px solid rgba(255, 215, 0, 0.06);
     z-index: 200;
     box-shadow: 0 -6px 18px rgba(0, 0, 0, 0.25);
-    padding: 8px 0;
+    padding: 10px 0;
   }
 
   .mobile-bottom-nav ul {
@@ -267,7 +224,7 @@ header .nav {
   }
 
   .mobile-bottom-nav a {
-    font-size: 13px;
+    font-size: var(--body-text-small);
     color: #d0d0d0;
   }
 
@@ -285,8 +242,14 @@ header .nav {
     height: 40px;
     font-size: 14px;
   }
+  .search input::placeholder {
+    font-size: var(--body-text-small);
+  }
   .mobile-bottom-nav a {
-    font-size: 12px;
-    padding: 6px 8px;
+    font-size: 13px;
+    padding: 8px 8px;
+  }
+  .search-icon {
+    right: 10px !important;
   }
 }

@@ -2,7 +2,7 @@
   width: 100%;
   background: var(--secondary-bg-color);
   padding: 50px 10%;
-  border-top: 0.1px solid var(--hover-cta-acc);
+  /* border-top: 0.1px solid var(--hover-cta-acc); */
 }
 
 .footer-container {

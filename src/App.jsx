@@ -1,11 +1,9 @@
-import React from "react";
-// import FirstPage from "./features/First/FirstPage";
 import "./i18n";
-import MainLayout from "./layout/MainLayout";
+import AppRoute from "./routes/AppRoute";
 function App() {
   return (
     <div className="main">
-      <MainLayout />
+      <AppRoute />
     </div>
   );
 }

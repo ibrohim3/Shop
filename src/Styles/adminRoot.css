@@ -1,0 +1,73 @@
+:root {
+  /* === Asosiy ranglar === */
+  --bg-color: #0e0e0e;
+  --panel-color: #161616;
+  --card-color: #1a1a1a;
+  --border-color: #2a2a2a;
+
+  /* === Matn ranglari === */
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --text-heading: #ffffff;
+  --text-muted: #b5b5b5;
+
+  /* === Brend (accent) ranglar === */
+  --accent-primary: #ffd700;
+  --accent-secondary: #c0a000;
+
+  /* === Holat ranglari === */
+  --success-color: #27ae60;
+  --error-color: #e74c3c;
+  --warning-color: #f1c40f;
+
+  /* === Navbar & Sidebar === */
+  --navbar-bg: #1a1a1a;
+  --sidebar-bg: #161616;
+  --sidebar-border: #2a2a2a;
+  --sidebar-link: #a0a0a0;
+  --sidebar-link-hover: #ffd700;
+  --sidebar-link-active-bg: #c0a000;
+  --sidebar-link-active-text: #0e0e0e;
+
+  /* === Cards === */
+  --card-border: #2a2a2a;
+  --card-shadow: rgba(255, 215, 0, 0.05);
+  --card-title: #ffd700;
+  --card-value: #ffffff;
+
+  /* === Tugmalar === */
+  --btn-primary-bg: #ffd700;
+  --btn-primary-hover: #c0a000;
+  --btn-primary-text: #0e0e0e;
+
+  --btn-secondary-bg: transparent;
+  --btn-secondary-border: #ffd700;
+  --btn-secondary-text: #ffd700;
+  --btn-secondary-hover-bg: #ffd700;
+  --btn-secondary-hover-text: #0e0e0e;
+
+  --btn-danger-bg: #e74c3c;
+  --btn-danger-text: #ffffff;
+
+  /* === Formlar === */
+  --input-bg: #1a1a1a;
+  --input-border: #333333;
+  --input-placeholder: #777777;
+  --label-color: #cfcfcf;
+
+  /* === Grafiklar (Charts) === */
+  --chart-bg: #151515;
+  --chart-line-start: #ffd700;
+  --chart-line-end: #c0a000;
+  --chart-axis: #aaaaaa;
+  --chart-grid: #2a2a2a;
+  --chart-tooltip-bg: #1a1a1a;
+  --chart-tooltip-text: #ffd700;
+
+  /* === Footer === */
+  --footer-bg: #0e0e0e;
+  --footer-text: #555555;
+  --footer-divider: #2a2a2a;
+  --footer-icon: #ffffff;
+  --footer-icon-hover: #ffd700;
+}

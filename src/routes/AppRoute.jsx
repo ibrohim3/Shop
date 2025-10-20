@@ -1,31 +1,59 @@
-// import React from "react";
-// import { Routes, Route } from "react-router-dom";
-// import Login from "../features/auth/Login/Login";
-// import Register from "../features/auth/Register/Register";
-// import FirstPage from "../features/First/FirstPage";
-// function AppRoute() {
-//   return (
-//     <Routes>
-//       {/* <Route path="/" element={<FirstPage />} /> */}
-//       <Route path="/login" element={<Login />} />
-//       <Route path="/register" element={<Register />} />
-//     </Routes>
-//   );
-// }
-import { Routes, Route, Navigate } from "react-router-dom";
-import Layout from "../layout/Layout";
-import Home from "../pages/Home/Home";
-import About from "../pages/About";
+// src/routes/AppRoute.jsx
+import { Routes, Route, Navigate, Outlet } from "react-router-dom";
+import { PATH_CLIENT, PATH_ADMIN } from "./paths";
+
+import MainLayout from "../layout/MainLayout";
+import AdminLayout from "../layout/AdminLayout/AdminLayout";
+
+// Client pages
+import Home from "../pages/client/Home/Home";
+import About from "../pages/client/About/About";
+import Contact from "../pages/client/Contact/Contact";
+import Login from "../pages/auth/Login/Login";
+import Register from "../pages/auth/Register/Register";
+
+// Admin pages
+import Dashboard from "../pages/admin/Dashboard/Dashboard";
+import Products from "../pages/admin/Products/Products";
+import Users from "../pages/admin/Users/Users";
+import Statistics from "../pages/admin/Statistics/Statistics";
+
+// ✅ PrivateRoute (admin-only)
+const PrivateRoute = () => {
+  const user = JSON.parse(localStorage.getItem("user") || "null");
+  return user?.role === "admin" ? (
+    <Outlet />
+  ) : (
+    <Navigate to="/uz/login" replace />
+  );
+};
 
 function AppRoute() {
   return (
     <Routes>
-      {/* Default yo'naltirish */}
+      {/* Default redirect */}
       <Route path="/" element={<Navigate to="/uz" replace />} />
 
-      <Route path="/:lang" element={<Layout />}>
+      {/* Client Layout (tilga bog‘liq) */}
+      <Route path="/:lang" element={<MainLayout />}>
         <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
+        <Route path="about-us" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+      </Route>
+
+      {/* Auth sahifalar */}
+      <Route path="/:lang/login" element={<Login />} />
+      <Route path="/:lang/register" element={<Register />} />
+
+      {/* Admin Layout (private) */}
+      <Route path="/:lang/admin" element={<PrivateRoute />}>
+        <Route element={<AdminLayout />}>
+          <Route index element={<Navigate to="dashboard" replace />} />
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="products" element={<Products />} />
+          <Route path="statistics" element={<Statistics />} />
+          <Route path="users" element={<Users />} />
+        </Route>
       </Route>
     </Routes>
   );

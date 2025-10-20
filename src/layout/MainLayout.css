@@ -3,7 +3,10 @@
   padding: 25px 200px;
   transition: all 0.3s ease;
 }
-
+.container {
+  /* max-width: 90%; */
+  margin: 0 auto;
+}
 /* === SKELETON CONTAINER === */
 .skeleton-container {
   display: flex;

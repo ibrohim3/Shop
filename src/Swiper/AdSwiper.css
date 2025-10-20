@@ -3,7 +3,7 @@
   margin-top: 20px;
   position: relative;
   overflow: hidden;
-  padding: 0 200px; /* bu desktop uchun normal */
+  /* padding: 0 200px;  */
 }
 
 /* Swiper konteyner */
@@ -115,15 +115,15 @@
   }
 }
 @media (max-width: 580px) {
- .ad-swiper .swiper-button-next,.ad-swiper
-  .swiper-button-prev {
+  .ad-swiper .swiper-button-next,
+  .ad-swiper .swiper-button-prev {
     display: none !important;
   }
 }
 
 @media (max-width: 480px) {
   .ad-swiper {
-    padding: 16px; /
+    padding: 16px;
   }
 
   .ad-swiper-container {
@@ -145,8 +145,8 @@
   .slide-content p {
     font-size: 0.8rem;
   }
-  .ad-swiper  .swiper-button-next,.ad-swiper
-  .swiper-button-prev {
+  .ad-swiper .swiper-button-next,
+  .ad-swiper .swiper-button-prev {
     display: none !important;
   }
 }

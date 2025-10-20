@@ -6,10 +6,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import metalImg from "../../assets/images/metal.png";
-import mebelImg from "../../assets/images/mebel.png";
-import yogochImg from "../../assets/images/yogoch.png";
-import listImg from "../../assets/images/list.png";
+import metalImg from "../../../assets/images/metal.png";
+import mebelImg from "../../../assets/images/mebel.png";
+import yogochImg from "../../../assets/images/yogoch.png";
+import listImg from "../../../assets/images/list.png";
 
 function Catalog() {
   const { t } = useTranslation();
@@ -34,7 +34,7 @@ function Catalog() {
           1200: { slidesPerView: 4 },
           992: { slidesPerView: 3 },
           768: { slidesPerView: 2 },
-          0: { slidesPerView: 1 }, // 580 px dan kichik uchun to‘liq 1ta card
+          0: { slidesPerView: 1 },
         }}
       >
         {catalog.map((item, index) => (

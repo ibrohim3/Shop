@@ -2,17 +2,14 @@ import { useParams, Outlet } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import Header from "../components/Header/Header";
-import Home from "../pages/Home/Home";
-import AdSwiper from "../Swiper/AdSwiper";
 import SkeletonCard from "../components/loading/SkeletonCard";
-import Cervice from "../pages/Cervice/Cervice";
 import "./MainLayout.css";
 import Footer from "../components/Footer/Footer";
 
 function MainLayout() {
   const { lang } = useParams();
   const { i18n } = useTranslation();
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true); // ✅ Dastlab true
 
   // Tilni almashtirish
   useEffect(() => {
@@ -21,7 +18,7 @@ function MainLayout() {
     }
   }, [lang, i18n]);
 
-  // Skeleton holatini ko‘rsatish (2s)
+  // Skeleton holatini ko‘rsatish (1s)
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);
@@ -30,21 +27,18 @@ function MainLayout() {
   return (
     <>
       <Header />
-      <AdSwiper />
-      <div className="content">
-        {loading ? (
-          <div className="skeleton-container">
-            {[1, 2, 3].map((n) => (
-              <SkeletonCard count={5} key={n} />
-            ))}
-          </div>
-        ) : (
-          <>
-            <Home />
-            <Cervice />
-            <Outlet />
-          </>
-        )}
+      <div className="container">
+        <div className="content">
+          {loading ? (
+            <div className="skeleton-container">
+              {[1, 2, 3].map((n) => (
+                <SkeletonCard count={5} key={n} />
+              ))}
+            </div>
+          ) : (
+            <Outlet /> // ✅ endi content ko‘rinadi
+          )}
+        </div>
       </div>
       <Footer />
     </>

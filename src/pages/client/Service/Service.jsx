@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import "./Cervice.css";
+import "./Service.css";
 
 function Cervice() {
   const { t } = useTranslation();

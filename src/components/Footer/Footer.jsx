@@ -58,16 +58,19 @@ function Footer() {
       <div className="footer-bottom">
         <p>© 2025 Turon Metall. {t("all_rights")}</p>
         <div className="social-icons">
-          <a href="#">
+          <a href="https://facebook.com" aria-label="Visit our Facebook page">
             <i className="fa-brands fa-facebook-f"></i>
           </a>
-          <a href="#">
+          <a
+            href="https://t.me/Qosimov47"
+            aria-label="Visit our Telegram channel"
+          >
             <i className="fa-brands fa-telegram"></i>
           </a>
-          <a href="#">
+          <a href="https://instagram.com" aria-label="Visit our Instagram page">
             <i className="fa-brands fa-instagram"></i>
           </a>
-          <a href="#">
+          <a href="https://youtube.com" aria-label="Visit our YouTube channel">
             <i className="fa-brands fa-youtube"></i>
           </a>
         </div>

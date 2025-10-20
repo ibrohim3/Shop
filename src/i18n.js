@@ -48,6 +48,36 @@ const resources = {
             subscribe: "Obuna bo‘lish",
             all_rights: "Barcha huquqlar himoyalangan.",
 
+
+            // Admin panel
+            all_products: "Barcha mahsulotlar",
+            all_sold: "Barcha sotilganlar",
+            all_bought: "Barcha sotib olinganlar",
+            debtors: "Nasiyalarning umumiy summasi",
+            income_expense_chart: "Chiqim va daromad grafigi",
+            revenue: "Daromad",
+            expenses: "Chiqimlar",
+            february: "Fevral",
+            march: "Mart",
+            april: "Aprel",
+            may: "May",
+            june: "Iyun",
+            july: "Iyul",
+            august: "Avgust",
+            september: "Sentabr",
+            october: "Oktabr",
+            november: "Noyabr",
+            december: "Dekabr",
+            log_out: "Chiqish",
+
+
+            // Admin panel side bar
+            dashboard: "Dashboard",
+            praducts: "Mahsulotlar",
+
+
+
+
         }
     },
     en: {
@@ -96,7 +126,31 @@ const resources = {
             subscribe: "Subscribe",
             all_rights: "All rights reserved.",
 
+            // Admin panel
 
+            all_products: "All products",
+            all_sold: "All sold items",
+            all_bought: "All purchased items",
+            debtors: "Total amount owed (on credit)",
+            income_expense_chart: "Income and expense chart",
+            revenue: "Revenue",
+            expenses: "Expenses",
+            february: "February",
+            march: "March",
+            april: "April",
+            may: "May",
+            june: "June",
+            july: "July",
+            august: "August",
+            september: "September",
+            october: "October",
+            november: "November",
+            december: "December",
+            log_out: "Log Out",
+
+            // Admin panel side bar
+            dashboard: "Dashboard",
+            praducts: "Products",
         }
     },
     ru: {
@@ -148,6 +202,32 @@ const resources = {
             all_rights: "Все права защищены.",
 
 
+            // Admin panel
+
+
+            all_products: "Все товары",
+            all_sold: "Все проданные товары",
+            all_bought: "Все купленные товары",
+            debtors: "Общая сумма задолженности (по кредитам/в рассрочку)",
+            income_expense_chart: "График расходов и доходов",
+            revenue: "Доход",
+            expenses: "Расходы",
+            february: "Февраль",
+            march: "Март",
+            april: "Апрель",
+            may: "Май",
+            june: "Июнь",
+            july: "Июль",
+            august: "Август",
+            september: "Сентябрь",
+            october: "Октябрь",
+            november: "Ноябрь",
+            december: "Декабрь",
+            log_out: "Выход",
+
+            // Admin panel side bar
+            dashboard: "Панель управления",
+            praducts: "Товары",
         }
     }
 };
