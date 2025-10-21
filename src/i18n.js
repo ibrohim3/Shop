@@ -237,7 +237,7 @@ const savedLang = localStorage.getItem("language")?.toLowerCase() || "uz";
 i18n.use(initReactI18next).init({
     resources,
     lng: savedLang,
-    fallbackLng: "en",
+    fallbackLng: "uz",
     interpolation: { escapeValue: false },
 });
 

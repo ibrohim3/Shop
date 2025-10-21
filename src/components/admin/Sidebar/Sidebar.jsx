@@ -1,13 +1,12 @@
-import { NavLink, Outlet, useNavigate } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import { PATH_ADMIN } from "../../../routes/paths";
 import "../../../layout/AdminLayout/AdminLayout.css";
 function Sidebar() {
-  const navigate = useNavigate();
-
   const handleLogout = () => {
     localStorage.removeItem("user");
-    navigate("/login");
+    window.location.href = "/uz/login";
   };
+
   return (
     <div>
       <aside className="admin-sidebar">

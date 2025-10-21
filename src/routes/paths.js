@@ -1,4 +1,3 @@
-// src/routes/paths.js
 
 const ROOTS_CLIENT = "/:lang";
 const ROOTS_ADMIN = "/:lang/admin";

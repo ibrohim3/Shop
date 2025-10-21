@@ -9,7 +9,7 @@ import Footer from "../components/Footer/Footer";
 function MainLayout() {
   const { lang } = useParams();
   const { i18n } = useTranslation();
-  const [loading, setLoading] = useState(true); // ✅ Dastlab true
+  const [loading, setLoading] = useState(true);
 
   // Tilni almashtirish
   useEffect(() => {
@@ -18,7 +18,7 @@ function MainLayout() {
     }
   }, [lang, i18n]);
 
-  // Skeleton holatini ko‘rsatish (1s)
+  // Skeleton holatini ko‘rsatish
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);
@@ -36,7 +36,7 @@ function MainLayout() {
               ))}
             </div>
           ) : (
-            <Outlet /> // ✅ endi content ko‘rinadi
+            <Outlet />
           )}
         </div>
       </div>

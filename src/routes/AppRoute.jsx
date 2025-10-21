@@ -1,14 +1,20 @@
-// src/routes/AppRoute.jsx
-import { Routes, Route, Navigate, Outlet } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { PATH_CLIENT, PATH_ADMIN } from "./paths";
 
+// Layouts
 import MainLayout from "../layout/MainLayout";
 import AdminLayout from "../layout/AdminLayout/AdminLayout";
+
+// Routes
+import PrivateRoute from "./PrivateRoute";
+import PublicRoute from "./PublicRoute";
 
 // Client pages
 import Home from "../pages/client/Home/Home";
 import About from "../pages/client/About/About";
 import Contact from "../pages/client/Contact/Contact";
+
+// Auth pages
 import Login from "../pages/auth/Login/Login";
 import Register from "../pages/auth/Register/Register";
 
@@ -18,34 +24,26 @@ import Products from "../pages/admin/Products/Products";
 import Users from "../pages/admin/Users/Users";
 import Statistics from "../pages/admin/Statistics/Statistics";
 
-// ✅ PrivateRoute (admin-only)
-const PrivateRoute = () => {
-  const user = JSON.parse(localStorage.getItem("user") || "null");
-  return user?.role === "admin" ? (
-    <Outlet />
-  ) : (
-    <Navigate to="/uz/login" replace />
-  );
-};
-
 function AppRoute() {
   return (
     <Routes>
-      {/* Default redirect */}
+      {/* Root redirect */}
       <Route path="/" element={<Navigate to="/uz" replace />} />
 
-      {/* Client Layout (tilga bog‘liq) */}
-      <Route path="/:lang" element={<MainLayout />}>
-        <Route index element={<Home />} />
-        <Route path="about-us" element={<About />} />
-        <Route path="contact" element={<Contact />} />
+      {/* (public) sahifalar */}
+      <Route element={<PublicRoute />}>
+        <Route path="/:lang" element={<MainLayout />}>
+          <Route index element={<Home />} />
+          <Route path="about-us" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
       </Route>
 
-      {/* Auth sahifalar */}
+      {/*  Auth sahifalar */}
       <Route path="/:lang/login" element={<Login />} />
       <Route path="/:lang/register" element={<Register />} />
 
-      {/* Admin Layout (private) */}
+      {/*  Admin (private) sahifalar */}
       <Route path="/:lang/admin" element={<PrivateRoute />}>
         <Route element={<AdminLayout />}>
           <Route index element={<Navigate to="dashboard" replace />} />
@@ -55,6 +53,9 @@ function AppRoute() {
           <Route path="users" element={<Users />} />
         </Route>
       </Route>
+
+      {/* Not found */}
+      <Route path="*" element={<Navigate to="/uz" replace />} />
     </Routes>
   );
 }
