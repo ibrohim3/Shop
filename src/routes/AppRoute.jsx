@@ -24,12 +24,14 @@ import Products from "../pages/admin/Products/Products";
 import Users from "../pages/admin/Users/Users";
 import Statistics from "../pages/admin/Statistics/Statistics";
 
+// Forbidden
+import Forbidden from "../pages/Forbidden/Forbidden";
 function AppRoute() {
   return (
     <Routes>
       {/* Root redirect */}
       <Route path="/" element={<Navigate to="/uz" replace />} />
-
+      <Route path="/:lang/forbidden" element={<Forbidden />} />
       {/* (public) sahifalar */}
       <Route element={<PublicRoute />}>
         <Route path="/:lang" element={<MainLayout />}>
@@ -44,13 +46,20 @@ function AppRoute() {
       <Route path="/:lang/register" element={<Register />} />
 
       {/*  Admin (private) sahifalar */}
-      <Route path="/:lang/admin" element={<PrivateRoute />}>
+      <Route path="/:lang/admin" element={<PrivateRoute role="admin" />}>
         <Route element={<AdminLayout />}>
           <Route index element={<Navigate to="dashboard" replace />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="products" element={<Products />} />
           <Route path="statistics" element={<Statistics />} />
           <Route path="users" element={<Users />} />
+        </Route>
+      </Route>
+
+      {/* Faqat user uchun sahifalar */}
+      <Route path="/:lang/home" element={<PrivateRoute role="user" />}>
+        <Route element={<MainLayout />}>
+          <Route index element={<Home />} />
         </Route>
       </Route>
 

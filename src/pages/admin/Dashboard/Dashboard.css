@@ -1,0 +1,58 @@
+.dashboard {
+  padding: 40px 60px;
+  min-height: 100vh;
+}
+.dashboard-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.dashboard-head h1 {
+  font-size: 36px;
+  color: var(--text-heading);
+  font-weight: 600;
+}
+.dashboard-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.dashboard-card {
+  height: 200px;
+  background-color: var(--card-color);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 2px 8px var(--card-shadow);
+  border-radius: 10px;
+  padding: 20px;
+  color: var(--text-primary);
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.15);
+}
+
+.dashboard .card-title {
+  font-size: 26px;
+  color: var(--card-title);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 25px;
+}
+.dashboard .card-value {
+  font-size: 32px;
+  color: var(--card-value);
+  font-weight: 700;
+}
+
+.card-icon {
+  font-size: 32px;
+}

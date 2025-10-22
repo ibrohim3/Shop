@@ -1,0 +1,65 @@
+.chart-wrapper {
+  background: var(--panel-color);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.1);
+  width: 100%;
+  /* max-width: 1100px; */
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart-title {
+  color: var(--text-heading);
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.custom-tooltip {
+  background: var(--chart-tooltip-bg);
+  border: 1px solid var(--accent-primary);
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: var(--chart-tooltip-text);
+}
+
+.tooltip-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+  color: var(--accent-primary);
+}
+
+.tooltip-item {
+  margin: 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* 🟡 Yillik o‘rtacha foyda card */
+.average-card {
+  margin-top: 30px;
+  background: var(--card-color);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.1);
+  border-radius: 12px;
+  padding: 18px 28px;
+  text-align: center;
+}
+
+.average-card h3 {
+  font-size: 20px;
+  color: var(--accent-primary);
+  margin-bottom: 8px;
+}
+
+.average-card p {
+  font-size: 28px;
+  color: var(--text-heading);
+  font-weight: 700;
+}

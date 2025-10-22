@@ -1,0 +1,109 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0e0e0e 0%, #161616 100%);
+  background-size: cover;
+  color: var(--text-primary);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.register-form {
+  background: var(--panel-color);
+  padding: 45px 40px;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.08);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.3s ease;
+}
+
+.register-form:hover {
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.register-title {
+  color: var(--accent-primary);
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.input-field {
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  color: var(--text-primary);
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.input-field::placeholder {
+  color: var(--input-placeholder);
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+}
+
+.register-btn {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background: var(--btn-primary-hover);
+  transform: scale(1.03);
+}
+
+.form-error {
+  color: var(--error-color);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.register-text {
+  color: var(--text-secondary);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.register-link {
+  color: var(--accent-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-link:hover {
+  color: var(--accent-secondary);
+}
+
+/* Smooth fade */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

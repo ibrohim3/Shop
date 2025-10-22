@@ -57,6 +57,7 @@ const resources = {
             income_expense_chart: "Chiqim va daromad grafigi",
             revenue: "Daromad",
             expenses: "Chiqimlar",
+            january: "Yanvar",
             february: "Fevral",
             march: "Mart",
             april: "Aprel",
@@ -69,11 +70,18 @@ const resources = {
             november: "Noyabr",
             december: "Dekabr",
             log_out: "Chiqish",
-
+            average_annual_profit: "Yillik o‘rtacha foyda",
+            income: "Daromad",
+            expense: "Chiqim",
+            profit: "Foyda",
 
             // Admin panel side bar
             dashboard: "Dashboard",
             praducts: "Mahsulotlar",
+            sales: "Sotuvlar",
+            debts: "Nasiya",
+            statistics: "Statistika",
+            users: "Foydalanuvchilar"
 
 
 
@@ -135,6 +143,7 @@ const resources = {
             income_expense_chart: "Income and expense chart",
             revenue: "Revenue",
             expenses: "Expenses",
+            january: "Yanvar",
             february: "February",
             march: "March",
             april: "April",
@@ -147,10 +156,18 @@ const resources = {
             november: "November",
             december: "December",
             log_out: "Log Out",
+            average_annual_profit: "Average annual profit",
+            income: "Income",
+            expense: "Expense",
+            profit: "Profit",
 
             // Admin panel side bar
             dashboard: "Dashboard",
             praducts: "Products",
+            sales: "Sales",
+            debts: "Debts",
+            statistics: "Statistics",
+            users: "Users"
         }
     },
     ru: {
@@ -212,6 +229,7 @@ const resources = {
             income_expense_chart: "График расходов и доходов",
             revenue: "Доход",
             expenses: "Расходы",
+            january: "Январь",
             february: "Февраль",
             march: "Март",
             april: "Апрель",
@@ -224,10 +242,17 @@ const resources = {
             november: "Ноябрь",
             december: "Декабрь",
             log_out: "Выход",
-
+            average_annual_profit: "Среднегодовая прибыль",
+            income: "Доход",
+            expense: "Расход",
+            profit: "Прибыль",
             // Admin panel side bar
             dashboard: "Панель управления",
             praducts: "Товары",
+            sales: "Продажи",
+            debts: "Долги",
+            statistics: "Статистика",
+            users: "Пользователи"
         }
     }
 };

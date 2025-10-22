@@ -1,7 +1,9 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { PATH_ADMIN } from "../../../routes/paths";
 import "../../../layout/AdminLayout/AdminLayout.css";
+import { useTranslation } from "react-i18next";
 function Sidebar() {
+  const { t } = useTranslation();
   const handleLogout = () => {
     localStorage.removeItem("user");
     window.location.href = "/uz/login";
@@ -14,31 +16,36 @@ function Sidebar() {
 
         <nav>
           <NavLink to={PATH_ADMIN.dashboard} className="link">
-            <i className="fa-solid fa-gauge-high"></i> <span>Dashboard</span>
+            <i className="fa-solid fa-gauge-high"></i>{" "}
+            <span>{t("dashboard")}</span>
           </NavLink>
 
           <NavLink to={PATH_ADMIN.products} className="link">
-            <i className="fa-solid fa-box"></i> <span>Tovarlar</span>
+            <i className="fa-solid fa-box"></i> <span> {t("praducts")} </span>
           </NavLink>
 
           <NavLink to={PATH_ADMIN.income} className="link">
-            <i className="fa-solid fa-arrow-trend-up"></i> <span>Kirim</span>
+            <i className="fa-solid fa-arrow-trend-up"></i>{" "}
+            <span>{t("income")}</span>
           </NavLink>
 
           <NavLink to={PATH_ADMIN.sales} className="link">
-            <i className="fa-solid fa-bag-shopping"></i> <span>Sotuvlar</span>
+            <i className="fa-solid fa-bag-shopping"></i>{" "}
+            <span>{t("sales")}</span>
           </NavLink>
 
           <NavLink to={PATH_ADMIN.debts} className="link">
-            <i className="fa-solid fa-arrow-trend-down"></i> <span>Nasiya</span>
+            <i className="fa-solid fa-arrow-trend-down"></i>{" "}
+            <span>{t("debts")}</span>
           </NavLink>
 
           <NavLink to={PATH_ADMIN.statistics} className="link">
-            <i className="fa-solid fa-chart-line"></i> <span>Statistika</span>
+            <i className="fa-solid fa-chart-line"></i>{" "}
+            <span>{t("statistics")}</span>
           </NavLink>
 
           <NavLink to={PATH_ADMIN.users} className="link">
-            <i className="fa-solid fa-users"></i> <span>Foydalanuvchilar</span>
+            <i className="fa-solid fa-users"></i> <span>{t("users")}</span>
           </NavLink>
         </nav>
 
