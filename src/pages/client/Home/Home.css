@@ -1,30 +1,3 @@
-/* .home .text {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.i {
+  color: red;
 }
-.home .title {
-  max-width: 900px;
-  min-width: 600px;
-  font-size: var(--large);
-  font-weight: 600;
-}
-.home .info {
-  font-size: var(--semi-bold-sz);
-  color: var(--info-color);
-  font-weight: 500;
-}
-.home .explore-btn {
-  padding: 14px 20px;
-  border: none;
-  border-radius: 10px;
-  font-size: var(--medium-sz);
-  font-weight: 500;
-  background: var(--hover-cta-acc);
-  color: var(--main-bg-color);
-  cursor: pointer;
-  transition: 0.4s ease;
-}
-.home .explore-btn:hover {
-  background: var(--secondary-cta);
-} */
