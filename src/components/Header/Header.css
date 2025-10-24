@@ -65,7 +65,46 @@ header {
   color: var(--hover-cta-acc);
   pointer-events: none;
 }
+/* === SEARCH HISTORY DROPDOWN === */
+.search-dropdown {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 480px;
+  background: var(--panel-color);
+  border: 1px solid var(--hover-cta-acc);
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 10;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.2s ease;
+}
 
+.search-dropdown li {
+  padding: 10px 14px;
+  cursor: pointer;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s;
+}
+
+.search-dropdown li:hover {
+  background: var(--hover-cta-acc);
+  color: var(--main-bg-color);
+}
+.clear-history {
+  text-align: center;
+  font-weight: 600;
+  color: #ff6666;
+  border-top: 1px solid var(--line-color);
+}
+
+.clear-history:hover {
+  background: #ff6666;
+  color: #fff;
+}
 /* NAV (desktop) */
 header .nav {
   display: flex;
@@ -257,5 +296,17 @@ header .nav {
   }
   .search-icon {
     right: 10px !important;
+  }
+  .search-dropdown {
+    width: 100%;
+    top: 46px; /* inputdan ozgina past */
+    left: 0;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+  .search-dropdown li {
+    padding: 8px 12px;
+    gap: 6px;
   }
 }
