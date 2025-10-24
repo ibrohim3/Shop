@@ -82,6 +82,7 @@ header .nav {
   display: flex;
   gap: 25px;
   align-items: center;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }

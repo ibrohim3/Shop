@@ -4,7 +4,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 100px 0;
-  margin: 40px auto;
+  margin: 40px 0 auto;
   background-color: var(--secondary-bg-color);
   box-shadow: 0 4px 12px rgba(255, 215, 0, 0.1);
 }
@@ -21,7 +21,7 @@
 }
 .cervice-item:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1.8);
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.15);
 }
 .item-name {
   font-size: var(--medium-sz-hover);

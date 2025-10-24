@@ -1,0 +1,18 @@
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  padding: 200px;
+  margin: 0 auto;
+}
+
+.loading,
+.error {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.error {
+  color: red;
+}

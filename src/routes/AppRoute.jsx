@@ -10,12 +10,9 @@ import PrivateRoute from "./PrivateRoute";
 import PublicRoute from "./PublicRoute";
 
 // Client Pages
-const Home = lazy(() => import("../pages/client/Home/Home"));
-const About = lazy(() => import("../pages/client/About/About"));
-const Contact = lazy(() => import("../pages/client/Contact/Contact"));
-// import Home from "../pages/client/Home/Home";
-// import About from "../pages/client/About/About";
-// import Contact from "../pages/client/Contact/Contact";
+import Home from "../pages/client/Home/Home";
+import About from "../pages/client/About/About";
+import Contact from "../pages/client/Contact/Contact";
 
 // Auth Pages
 import Login from "../pages/auth/Login/Login";

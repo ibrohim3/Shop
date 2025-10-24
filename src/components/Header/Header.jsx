@@ -53,9 +53,9 @@ function Header() {
 
         {/* NAV */}
         <nav className="nav">
-          <div className="catalog-container">
+          {/* <div className="catalog-container">
             <p className="catalog login-btn">{t("products")}</p>
-          </div>
+          </div> */}
 
           <ul className="links">
             {links.map((l) => (

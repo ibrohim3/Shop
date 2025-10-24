@@ -5,6 +5,7 @@ import Header from "../components/Header/Header";
 import SkeletonCard from "../components/loading/SkeletonCard";
 import "./MainLayout.css";
 import Footer from "../components/Footer/Footer";
+import Products from "../pages/client/Products/Products";
 
 function MainLayout() {
   const { lang } = useParams();
@@ -40,6 +41,7 @@ function MainLayout() {
           )}
         </div>
       </div>
+      <Products />
       <Footer />
     </>
   );
