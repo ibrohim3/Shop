@@ -1,9 +1,9 @@
 .i {
   color: red;
 }
-/* .popular-products {
+.popular-products {
   margin: 40px 0;
-  padding: 20px;
+  padding: 30px;
   background: var(--panel-color);
   border-radius: 16px;
 }
@@ -11,10 +11,11 @@
 .popular-products h2 {
   font-size: 1.5rem;
   margin-bottom: 20px;
+  color: white;
 }
 
 .popular-grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-} */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
