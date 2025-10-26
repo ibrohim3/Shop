@@ -68,7 +68,7 @@ function MainLayout() {
   }, [lang, i18n]);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1000);
+    const timer = setTimeout(() => setLoading(false), 1);
     return () => clearTimeout(timer);
   }, []);
 

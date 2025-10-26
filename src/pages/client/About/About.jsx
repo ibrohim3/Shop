@@ -1,47 +1,38 @@
 import "./About.css";
-
+import { useTranslation } from "react-i18next";
 function About() {
+  const { t } = useTranslation();
   return (
     <section className="about">
       <div className="about-container">
         <div className="about-header">
-          <h1>Biz haqimizda</h1>
+          <h1>{t("about")}</h1>
           <div className="underline"></div>
-          <p>
-            <strong>Turon Metall</strong> — metall mahsulotlari va xizmatlari
-            sohasida ilg‘or texnologiyalar, sifat va ishonchlilikni o‘zida
-            mujassam etgan kompaniya. Bizning jamoamiz sanoat va qurilish
-            sohalariga eng yuqori darajadagi yechimlarni taqdim etadi.
-          </p>
+          <p>{t("about_description")}</p>
         </div>
 
         <div className="about-stats">
           <div className="stat-card">
             <h2>10+</h2>
-            <span>Yillik tajriba</span>
+            <span> {t("years_experience")} </span>
           </div>
           <div className="stat-card">
             <h2>500+</h2>
-            <span>Mamnun mijozlar</span>
+            <span> {t("happy_clients")} </span>
           </div>
           <div className="stat-card">
             <h2>1000+</h2>
-            <span>Mahsulot turlari</span>
+            <span> {t("product_types")} </span>
           </div>
           <div className="stat-card">
             <h2>24/7</h2>
-            <span>Xizmat ko‘rsatish</span>
+            <span> {t("service_three")} </span>
           </div>
         </div>
 
         <div className="about-mission">
-          <h3>Bizning maqsadimiz</h3>
-          <p>
-            Turon Metall sifat, barqarorlik va mijoz ishonchini birlashtirgan
-            holda metall sohasida ilg‘or natijalarga erishish uchun harakat
-            qiladi. Biz har bir hamkorlikda samarali yechim taklif etishga
-            intilamiz.
-          </p>
+          <h3> {t("our_mission_title")} </h3>
+          <p>{t("description")}</p>
         </div>
       </div>
     </section>

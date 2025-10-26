@@ -1,27 +1,29 @@
 import "./Contact.css";
-
+import { useTranslation } from "react-i18next";
 function Contact() {
+  const { t } = useTranslation();
   return (
     <section className="contact">
       <div className="contact-container">
-        <h1>Biz bilan bog‘laning</h1>
+        <h1>{t("contact")} </h1>
         <div className="underline"></div>
-        <p className="contact-sub">
-          Sizning fikringiz biz uchun muhim! Quyidagi forma orqali murojaat
-          yuboring yoki to‘g‘ridan-to‘g‘ri bog‘laning.
-        </p>
+        <p className="contact-sub">{t("contact_intro")}</p>
 
         <div className="contact-grid">
           <form className="contact-form">
-            <input type="text" placeholder="Ismingiz" required />
-            <input type="email" placeholder="Email manzilingiz" required />
-            <textarea rows="5" placeholder="Xabaringiz" required></textarea>
-            <button type="submit">Yuborish</button>
+            <input type="text" placeholder={t("your_name")} required />
+            <input type="email" placeholder={t("your_email")} required />
+            <textarea
+              rows="5"
+              placeholder={t("your_message")}
+              required
+            ></textarea>
+            <button type="submit">{t("send_message")}</button>
           </form>
 
           <div className="contact-info">
-            <h3>Aloqa ma’lumotlari</h3>
-            <p>📍 Namangan, O‘zbekiston</p>
+            <h3>{t("title")}</h3>
+            <p> {t("address2")} </p>
             <p>📞 +998 97 123 45 67</p>
             <p>✉️ info@turonmetall.uz</p>
 

@@ -32,6 +32,26 @@ const resources = {
             cervice2_desc: "Ikki hafta ichida",
             cervice3_desc: "Sharxlarni o'qing va bo'lishing",
 
+
+            // About and Contact
+            about_description:
+                "Turon Metall — metall mahsulotlari va xizmatlari sohasida ilg‘or texnologiyalar, sifat va ishonchlilikni o‘zida mujassam etgan kompaniya. Bizning jamoamiz sanoat va qurilish sohalariga eng yuqori darajadagi yechimlarni taqdim etadi.",
+            years_experience: "Yillik tajriba",
+            happy_clients: "Mamnun mijozlar",
+            product_types: "Mahsulot turlari",
+            service_three: "Xizmat ko‘rsatish",
+            our_mission_title: "Bizning maqsadimiz",
+            description:
+                "Turon Metall sifat, barqarorlik va mijoz ishonchini birlashtirgan holda metall sohasida ilg‘or natijalarga erishish uchun harakat qiladi. Biz har bir hamkorlikda samarali yechim taklif etishga intilamiz.",
+
+            contact_intro:
+                "Savollaringiz bormi? Quyidagi forma orqali biz bilan bog‘laning.",
+            your_name: "Ismingiz",
+            your_email: "Email manzilingiz",
+            your_message: "Xabaringiz",
+            send_message: "Yuborish",
+            title: "Aloqa ma’lumotlari",
+            address2: "📍 Namangan, O‘zbekiston",
             // Footer
             address: "Manzil",
             have_question: "Savolingiz bormi?",
@@ -117,6 +137,24 @@ const resources = {
             cervice2_desc: "Within two weeks",
             cervice3_desc: "Read and share reviews",
 
+            // About and Contact
+            about_description:
+                "Turon Metall is a company that combines advanced technologies, quality, and reliability in the field of metal products and services. Our team provides top-level solutions for the industrial and construction sectors.",
+            years_experience: "Years of Experience",
+            happy_clients: "Happy Clients",
+            product_types: "Product Types",
+            service_three: "Maintenance Service",
+            our_mission_title: "Our Mission",
+            description:
+                "Turon Metall strives for excellence in the metal industry by combining quality, stability, and customer trust. We aim to provide effective solutions in every partnership.",
+            contact_intro:
+                "Have any questions? Get in touch with us using the form below.",
+            your_name: "Your Name",
+            your_email: "Your Email",
+            your_message: "Your Message",
+            send_message: "Send Message",
+            title: "Contact Information",
+            address2: "📍 Namangan, Uzbekistan",
             // Footer
 
             address: "Address",
@@ -200,6 +238,25 @@ const resources = {
             cervice2_desc: "В течение двух недель",
             cervice3_desc: "Читайте и делитесь отзывами",
 
+
+            // About and Contact
+            about_description:
+                "Turon Metall — это компания, которая сочетает передовые технологии, качество и надежность в сфере металлических изделий и услуг. Наша команда предоставляет решения самого высокого уровня для промышленного и строительного секторов.",
+            years_experience: "Лет опыта",
+            happy_clients: "Довольные клиенты",
+            product_types: "Виды продукции",
+            service_three: "Обслуживание",
+            our_mission_title: "Наша миссия",
+            description:
+                "Turon Metall стремится к достижению выдающихся результатов в сфере металла, объединяя качество, стабильность и доверие клиентов. Мы стремимся предложить эффективные решения в каждом партнёрстве.",
+            contact_intro:
+                "Есть вопросы? Свяжитесь с нами, используя форму ниже.",
+            your_name: "Ваше имя",
+            your_email: "Ваш email",
+            your_message: "Ваше сообщение",
+            send_message: "Отправить",
+            title: "Контактная информация",
+            address2: "📍 Наманган, Узбекистан",
 
             // Footer
 
