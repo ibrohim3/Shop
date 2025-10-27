@@ -1,12 +1,30 @@
-# React + Vite
+# 🛍️ Turon Shop — React E-Commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Turon Shop** — bu React yordamida yaratilgan zamonaviy onlayn do‘kon (e-commerce) veb-ilovasi bo‘lib, foydalanuvchilarga mahsulotlarni ko‘rish, tanlash va savatchaga qo‘shish imkonini beradi.  
+Loyiha **modullar, komponentlar va LocalStorage** orqali ma’lumotni saqlashga asoslangan.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Xususiyatlar
 
-## Expanding the ESLint configuration
+- 💎 **Zamonaviy UI/UX dizayn** (Glassmorphism, Tailwind yoki CSS modullar bilan)
+- 🧩 **Komponentli arxitektura** — Header, Footer, ProductCard, CartModal va boshqalar
+- 🛒 **Savatcha funksiyasi** — tanlangan mahsulotlarni LocalStorage orqali saqlaydi
+- 🔍 **Mahsulot qidiruvi** — mahsulotlarni nomi yoki toifasi bo‘yicha qidirish
+- 📱 **To‘liq responsiv** — mobil, planshet va desktop uchun moslashgan
+- 🌗 **Dark / Light rejim** — mavzuni o‘zgartirish imkoniyati
+- 🔐 **Login / Register modallari** — foydalanuvchi autentifikatsiyasi (local)
+- ⚡ **SPA (Single Page Application)** — React Router orqali sahifalar o‘rtasida tez o‘tish
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧰 Texnologiyalar
+
+| Texnologiya                     | Vazifasi                                 |
+| ------------------------------- | ---------------------------------------- |
+| **React.js (Vite)**             | UI yaratish va komponentlarni boshqarish |
+| **React Router DOM**            | Marshrutlash (Routing)                   |
+| **CSS / Tailwind CSS**          | Dizayn va responsivlik                   |
+| **LocalStorage API**            | Ma’lumotni saqlash                       |
+| **Font Awesome / Lucide Icons** | Ikonalar                                 |
+| **Framer Motion**               | Animatsiyalar                            |
