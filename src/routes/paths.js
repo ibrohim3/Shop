@@ -10,6 +10,9 @@ export const PATH_CLIENT = {
     contact: `${ROOTS_CLIENT}/contact`,
     login: `${ROOTS_CLIENT}/login`,
     register: `${ROOTS_CLIENT}/register`,
+    delivery: `${ROOTS_CLIENT}/delivery`,
+    moneyBack: `${ROOTS_CLIENT}/money-back`,
+    comments: `${ROOTS_CLIENT}/comments`,
 };
 
 // ✅ Admin paths

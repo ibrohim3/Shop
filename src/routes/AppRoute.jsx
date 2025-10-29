@@ -14,6 +14,11 @@ import Home from "../pages/client/Home/Home";
 import About from "../pages/client/About/About";
 import Contact from "../pages/client/Contact/Contact";
 
+// Coming soon pages
+import Delivery from "../pages/client/Service/Services/Delivery/Delivery";
+import Comments from "../pages/client/Service/Services/Comments/Comments";
+import MoneyBack from "../pages/client/Service/Services/MoneyBack/MoneyBack";
+
 // Auth Pages
 import Login from "../pages/auth/Login/Login";
 import Register from "../pages/auth/Register/Register";
@@ -45,6 +50,19 @@ function AppRoute() {
             <Route
               path={PATH_CLIENT.contact.replace(`${PATH_CLIENT.root}/`, "")}
               element={<Contact />}
+            />
+            {/* Qo‘shimcha sahifalar */}
+            <Route
+              path={PATH_CLIENT.delivery.replace(`${PATH_CLIENT.root}/`, "")}
+              element={<Delivery />}
+            />
+            <Route
+              path={PATH_CLIENT.moneyBack.replace(`${PATH_CLIENT.root}/`, "")}
+              element={<MoneyBack />}
+            />
+            <Route
+              path={PATH_CLIENT.comments.replace(`${PATH_CLIENT.root}/`, "")}
+              element={<Comments />}
             />
           </Route>
         </Route>

@@ -1,0 +1,70 @@
+.coming-soon {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--main-bg-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+.coming-soon-content {
+  max-width: 480px;
+  background: var(--secondary-bg-color);
+  padding: 40px 30px;
+  border-radius: 20px;
+  border: 1px solid var(--borde-color);
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.coming-soon-content:hover {
+  transform: scale(1.02);
+}
+
+.coming-title {
+  font-size: var(--bold-sz);
+  color: var(--main-title-color);
+  margin-bottom: 15px;
+}
+
+.coming-text {
+  font-size: var(--medium-sz);
+  color: var(--info-color);
+  margin-bottom: 30px;
+}
+
+.loader {
+  margin: 0 auto 25px;
+  width: 55px;
+  height: 55px;
+  border: 6px solid var(--secondary-bg-color);
+  border-top-color: var(--accent1);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.home-btn {
+  background: var(--accent1);
+  color: var(--main-bg-color);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: var(--body-text-small);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  background: var(--hover-cta-acc);
+  transform: translateY(-2px);
+}

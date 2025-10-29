@@ -101,9 +101,16 @@ const resources = {
             sales: "Sotuvlar",
             debts: "Nasiya",
             statistics: "Statistika",
-            users: "Foydalanuvchilar"
+            users: "Foydalanuvchilar",
 
-
+            // Coming soon
+            deliveryTitle: "🚚 Yetkazib berish sahifasi tez orada chiqadi",
+            deliveryText: "Yetkazib berish xizmati haqida ma’lumot tez orada joylanadi.",
+            commentsTitle: "💬 Fikrlar sahifasi tez orada chiqadi",
+            commentsText: "Fikr-mulohazalar sahifasi ustida ishlayapmiz. Sabr bilan kuting!",
+            moneyTitle: "💰 Pulni qaytarish sahifasi tez orada chiqadi",
+            moneyText: "Pulni qaytarish siyosati sahifasi ustida ish ketmoqda.",
+            goHome: "🏠 Bosh sahifaga qaytish",
 
 
         }
@@ -205,7 +212,16 @@ const resources = {
             sales: "Sales",
             debts: "Debts",
             statistics: "Statistics",
-            users: "Users"
+            users: "Users",
+
+            // Coming soon
+            deliveryTitle: "🚚 Delivery Page Coming Soon",
+            deliveryText: "Information about delivery services will be available soon.",
+            commentsTitle: "💬 Comments Page Coming Soon",
+            commentsText: "The feedback page is under development. Stay tuned!",
+            moneyTitle: "💰 Money Back Page Coming Soon",
+            moneyText: "The refund policy page is coming soon!",
+            goHome: "🏠 Go Home",
         }
     },
     ru: {
@@ -309,7 +325,16 @@ const resources = {
             sales: "Продажи",
             debts: "Долги",
             statistics: "Статистика",
-            users: "Пользователи"
+            users: "Пользователи",
+
+            // Coming soon
+            deliveryTitle: "🚚 Страница доставки скоро будет",
+            deliveryText: "Информация о доставке появится в ближайшее время.",
+            commentsTitle: "💬 Страница комментариев скоро будет",
+            commentsText: "Страница отзывов находится в разработке. Следите за обновлениями!",
+            moneyTitle: "💰 Страница возврата средств скоро будет",
+            moneyText: "Страница политики возврата средств скоро появится.",
+            goHome: "🏠 Вернуться на главную",
         }
     }
 };

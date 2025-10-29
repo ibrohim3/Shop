@@ -1,8 +1,10 @@
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+import { PATH_CLIENT } from "../../../routes/paths";
 import "./Service.css";
-
 function Cervice() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const cervices = [
     {
@@ -10,25 +12,32 @@ function Cervice() {
       icon: "fa-solid fa-truck",
       name: t("cervice1"),
       desc: t("cervice1_desc"),
+      link: PATH_CLIENT.delivery,
     },
     {
       id: 2,
       icon: "fa-solid fa-rotate-left",
       name: t("cervice2"),
       desc: t("cervice2_desc"),
+      link: PATH_CLIENT.moneyBack,
     },
     {
       id: 3,
       icon: "fa-solid fa-comments",
       name: t("cervice3"),
       desc: t("cervice3_desc"),
+      link: PATH_CLIENT.comments,
     },
   ];
 
   return (
     <div className="cervice">
       {cervices.map((item) => (
-        <div key={item.id} className="cervice-item">
+        <div
+          key={item.id}
+          className="cervice-item"
+          onClick={() => navigate(item.link)}
+        >
           <div className="icon">
             <i className={item.icon}></i>
           </div>
