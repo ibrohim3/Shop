@@ -9,10 +9,10 @@ const MoneyBack = () => {
     <div className="coming-soon">
       <div className="coming-soon-content">
         <h1 className="coming-title">
-          {t("moneyBackTitle") || "Money Back Guarantee"}
+          {t("moneyTitle") || "Money Back Guarantee"}
         </h1>
         <p className="coming-text">
-          {t("moneyBackText") ||
+          {t("moneyText") ||
             "Our refund policy will be available soon. Stay tuned!"}
         </p>
         <div className="loader"></div>
