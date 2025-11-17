@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
 import "./login.css";
+import "../../../Styles/siteRoot.css";
 
 function Login() {
   const [phone, setPhone] = useState("");
