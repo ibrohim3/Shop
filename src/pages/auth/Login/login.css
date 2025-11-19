@@ -52,8 +52,8 @@
 
 .input-field:focus {
   outline: none;
-  border-color: var(--hover-cta-acc);
-  box-shadow: 0 4px 18px rgba(34, 211, 238, 0.15);
+  border-color: var(--accent1);
+  box-shadow: 0 0 8px rgba(6, 182, 212, 0.3);
 }
 
 /* Error message */

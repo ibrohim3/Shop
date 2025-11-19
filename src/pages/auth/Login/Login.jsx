@@ -11,7 +11,6 @@ function Login() {
   const { lang } = useParams();
 
   const validate = () => {
-    // oddiy tekshiruv: telefon 9 dan kam bo'lmasin (siz xohlasangiz o'zgartiring)
     const digitsOnly = phone.replace(/\D/g, "");
     if (digitsOnly.length < 9) {
       setError(
@@ -47,7 +46,6 @@ function Login() {
       localStorage.setItem("user", JSON.stringify(user));
       navigate(`/${lang}/home`);
     } else {
-      // agar noto'g'ri bo'lsa xato xabar chop etamiz
       setError("Telefon yoki parol noto‘g‘ri. Iltimos qayta urinib ko‘ring.");
     }
   };
