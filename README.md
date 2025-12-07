@@ -12,7 +12,6 @@ Loyiha **modullar, komponentlar va LocalStorage** orqali ma’lumotni saqlashga 
 - 🛒 **Savatcha funksiyasi** — tanlangan mahsulotlarni LocalStorage orqali saqlaydi
 - 🔍 **Mahsulot qidiruvi** — mahsulotlarni nomi yoki toifasi bo‘yicha qidirish
 - 📱 **To‘liq responsiv** — mobil, planshet va desktop uchun moslashgan
-- 🌗 **Dark / Light rejim** — mavzuni o‘zgartirish imkoniyati
 - 🔐 **Login / Register modallari** — foydalanuvchi autentifikatsiyasi (local)
 - ⚡ **SPA (Single Page Application)** — React Router orqali sahifalar o‘rtasida tez o‘tish
 
