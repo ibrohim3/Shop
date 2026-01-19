@@ -48,16 +48,7 @@ function Home() {
       <AdSwiper />
       <Catalog />
 
-      /* {popularProducts.length > 0 && (
-        <section className="popular-products">
-          <h2>🔥 Eng ko‘p qidirilgan mahsulotlar</h2>
-          <div className="popular-grid">
-            {popularProducts.map((p) => (
-              <ProductCard key={p.id} product={p} />
-            ))}
-          </div>
-        </section>
-      )} */
+
 
       <Service />
       <Products />
