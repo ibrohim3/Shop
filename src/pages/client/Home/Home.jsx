@@ -24,9 +24,9 @@ import Service from "../Service/Service";
 import Products from "../../client/Products/Products";
 
 function Home() {
-  const { searchQuery } = useOutletContext();
-  const { data: products = [] } = useProducts();
-  const [popularProducts, setPopularProducts] = useState([]);
+  // const { searchQuery } = useOutletContext();
+  // const { data: products = [] } = useProducts();
+  // const [popularProducts, setPopularProducts] = useState([]);
 
   // Eng ko‘p qidirilgan mahsulotlarni olish
   // useEffect(() => {
@@ -48,7 +48,7 @@ function Home() {
       <AdSwiper />
       <Catalog />
 
-      {popularProducts.length > 0 && (
+      /* {popularProducts.length > 0 && (
         <section className="popular-products">
           <h2>🔥 Eng ko‘p qidirilgan mahsulotlar</h2>
           <div className="popular-grid">
@@ -57,7 +57,7 @@ function Home() {
             ))}
           </div>
         </section>
-      )}
+      )} */
 
       <Service />
       <Products />
